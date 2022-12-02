@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GenerationFinderApp</string>
+    <string name="titlehead">GENERATION FINDER</string>
+    <string name="description"> Enter below your current age in order to  identify the year and generation where you were born. </string>
+    <string name="searchbar">SEARCH</string>
+    <string name="returnbar">RETURN</string>
+    // Gone
+    <string name="gonetitlehead">Traditionalists</string>
+    <string name="gonedescription">The Traditionalist Generation also known as the Veterans, the Silent Generation, and the Greatest Generation is comprised of men and women born between 1922 and 1945. This group survived the Great Depression of 1930, but they also brought us out of WWII and helped make the United States a world power.</string>
+    //Gtwo
+    <string name="gtwotitlehead">Baby Boomers</string>
+    <string name="gtwodescription">Baby boomer is a term used to describe a person who was born between 1946 and 1964. The baby boomer generation makes up a substantial portion of the worlds population, especially in developed nations. Baby boomers have had and continue to have a significant impact on the economy because they have a lot of money.</string>
+    //Gthree
+    <string name="gthreetitlehead">Generation X</string>
+    <string name="gthreedescription">Generation X includes those born between 1965 and 1981, during the reconstruction of Europe after the war. Their life has not been easy, since, after a period of upheaval, finding a job was a great challenge. To work and produce was their philosophy of life, leaving no room for idealism.</string>
+    //Gfour
+    <string name="gfourtitlehead">Millennials</string>
+    <string name="gfourdescription">Millennials, also known as Generation Y or the Net Generation, are the demographic cohort that directly follows Generation X. Millennials grew up with computers makes them adept at understanding interfaces and computer languages. Although it’s been proven that multitasking is not usually an effective way to work, Millennials may be the employees that are most likely to pull it off.</string>
+    //Gfive
+    <string name="gfivetitlehead">Generation Z</string>
+    <string name="gfivedescription">Gen Z is the name given to the current generation of young people by many demographic researchers. Generation Z consists of people born between 1996 and 2012. The oldest of this generation are reaching 25 years of age, with many now out of college, getting married, and starting families.</string>
+    //Gsix
+    <string name="gsixtitlehead">Generation Alpha</string>
+    <string name="gsixdescription">Generation Alpha is the demographic cohort succeeding Generation Z. Researchers and popular media use the early to mid 2010s as starting birth years and the mid 2020s as ending birth years. In various articles about its members, analysts have stated that they are or will grow up to be the best-educated generation and most technologically immersed generation.</string>
+
+
+</resources>
