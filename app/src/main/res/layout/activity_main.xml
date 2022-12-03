@@ -8,6 +8,42 @@
     tools:context=".MainActivity">
 
 
+    <EditText
+        android:id="@+id/etinsert2"
+        android:layout_width="217dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="36dp"
+        android:background="#9F9292"
+        android:ems="10"
+        android:hint="XX"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/etinsert3"
+        android:layout_width="217dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="36dp"
+        android:background="#9F9292"
+        android:ems="10"
+        android:hint="XX"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
     <TextView
         android:id="@+id/description"
         android:layout_width="334dp"
@@ -27,21 +63,22 @@
 
     <EditText
         android:id="@+id/etinsert"
-        android:layout_width="337dp"
-        android:layout_height="148dp"
+        android:layout_width="217dp"
+        android:layout_height="61dp"
         android:background="#9F9292"
         android:ems="10"
+        android:hint="XXXX"
         android:inputType="number"
-        android:textColor="@color/black"
-        android:visibility="visible"
-        android:hint="X-X"
-        android:textSize="60sp"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintVertical_bias="0.362" />
 
     <Button
         android:id="@+id/button"
@@ -76,6 +113,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/titlehead2"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFEB3B"
+        android:padding="5sp"
+        android:text="Year :"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etinsert"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/titlehead3"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFEB3B"
+        android:padding="5sp"
+        android:text="Month :"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/etinsert2"
+        app:layout_constraintTop_toBottomOf="@+id/titlehead2" />
+
+    <TextView
+        android:id="@+id/titlehead4"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFEB3B"
+        android:padding="5sp"
+        android:text="Day :"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/etinsert3"
+        app:layout_constraintTop_toBottomOf="@+id/titlehead3" />
 
     <ImageView
         android:id="@+id/imageView2"

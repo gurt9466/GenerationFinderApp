@@ -6,15 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Gfive extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
+        String result = extras.getString("result");
         setContentView(R.layout.activity_gfive);
 
         Button button = (Button) findViewById(R.id.button);
+        TextView tvResult = (TextView) findViewById(R.id.textView);
+        tvResult.setText(result);
         button.setOnClickListener(this);
     }
 

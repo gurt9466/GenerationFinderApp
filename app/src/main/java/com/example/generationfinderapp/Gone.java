@@ -13,9 +13,13 @@ public class Gone extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
+        String result = extras.getString("result");
         setContentView(R.layout.activity_gone);
 
         Button button = (Button) findViewById(R.id.button);
+        TextView tvResult = (TextView) findViewById(R.id.textView);
+        tvResult.setText(result);
         button.setOnClickListener(this);
     }
 

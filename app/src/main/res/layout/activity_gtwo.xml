@@ -7,6 +7,8 @@
     android:background="#E4D0D0"
     tools:context=".Gtwo">
 
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="389dp"
@@ -23,6 +25,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="312dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="14dp"
+        android:background="#FFEB3B"
+        android:text="1922 - 1945"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
 
     <TextView
         android:id="@+id/description"
@@ -91,20 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titlehead"
         app:srcCompat="@drawable/gtwo" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="14dp"
-        android:text="1946 - 1964"
-        android:textColor="@color/black"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/description"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

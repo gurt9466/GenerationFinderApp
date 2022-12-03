@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    EditText etinsert;
-    String strtext;
+    EditText etinsert, etinsert2, etinsert3;
+    String stryear, strmonth, strday ,resultMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,29 +28,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void ComputeResult(){
         etinsert = (EditText) findViewById(R.id.etinsert);
-        if(etinsert.getText().toString().isEmpty()){
-            strtext = "0";
+        etinsert2 = (EditText) findViewById(R.id.etinsert2);
+        etinsert3 = (EditText) findViewById(R.id.etinsert3);
+        if(etinsert.getText().toString().isEmpty() ||etinsert2.getText().toString().isEmpty() || etinsert3.getText().toString().isEmpty()){
+            stryear = "0";
         }else{
-            strtext = etinsert.getText().toString();
+            stryear = etinsert.getText().toString();
+            strday = etinsert3.getText().toString();
+            strmonth =  etinsert2.getText().toString();
         }
 
         Year thisYear = Year.now();
-        int search = Integer.parseInt(strtext);
-        int year = Integer.parseInt(String.valueOf(thisYear));
-        int dob = year-search;
+        int search = Integer.parseInt(stryear);
+        int month = Integer.parseInt(strmonth);
+        int day = Integer.parseInt(strday);
         int a = 0;
 
-        if(dob <=1945){
+        LocalDate tdob = LocalDate.of(search, month, day);
+        LocalDate curDate = LocalDate.now();
+        Period period = Period.between(tdob, curDate);
+
+        if(search <=1945){
         a = (1);
-        }else if(dob <=1964){
+        }else if(search <=1964){
             a = (2);
-        } else if (dob <=1976){
+        } else if (search <=1976){
             a = (3);
-        } else if (dob <=1995) {
+        } else if (search <=1995) {
             a = (4);
-        }else if (dob <=2012) {
+        }else if (search <=2012) {
                 a = (5);
-        }else if (dob <=2024) {
+        }else if (search <=2024) {
             a = (6);
         }
         switch (a){
@@ -79,6 +87,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent6);
                 break;
         }
+        resultMessage = "CURRENT AGE :\n  "+ period.getYears()+" Years ,  "+ period.getMonths()+" Months, "+ period.getDays() + " Days\n"+ "  Year Born : "+search;
+        Bundle args = new Bundle();
+        args.putString("result", resultMessage);
+        if(search <=1945){
+            Intent intent = new Intent(MainActivity.this, Gone.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        }else if(search <=1964){
+            Intent intent = new Intent(MainActivity.this, Gtwo.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        } else if (search <=1976){
+            Intent intent = new Intent(MainActivity.this, Gthree.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        } else if (search <=1995) {
+            Intent intent = new Intent(MainActivity.this, Gfour.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        }else if (search <=2012) {
+            Intent intent = new Intent(MainActivity.this, Gfive.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        }else if (search <=2024) {
+            Intent intent = new Intent(MainActivity.this, Gsix.class);
+            intent.putExtras(args);
+            startActivity(intent);
+        }
+
     }
 
 
