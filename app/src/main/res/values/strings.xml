@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GenerationFinderApp</string>
     <string name="titlehead">GENERATION FINDER</string>
-    <string name="description"> Enter below your current age in order to  identify the year and generation where you were born. </string>
+    <string name="description"> Enter below your Year, Month and Day in order to get your current age and to identify which generation you belong to.  </string>
     <string name="searchbar">SEARCH</string>
     <string name="returnbar">RETURN</string>
     // Gone

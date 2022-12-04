@@ -46,9 +46,9 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="334dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="337dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="18dp"
         android:text="@string/description"
         android:textAlignment="gravity"
